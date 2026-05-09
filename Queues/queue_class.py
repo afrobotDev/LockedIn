@@ -15,7 +15,10 @@ class Queue:
         return len(self.items)
     
     def search_and_remove(self, item):
-        self.items.remove(item) if item in self.items else return None
+        if item not in self.items:
+            return None
+
+        self.items.remove(item)
         return item
 
     def __rpr__(self):
