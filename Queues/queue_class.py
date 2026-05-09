@@ -13,4 +13,11 @@ class Queue:
 
     def size(self):
         return len(self.items)
+    
+    def search_and_remove(self, item):
+        self.items.remove(item) if item in self.items else return None
+        return item
+
+    def __rpr__(self):
+        return f"[{', '.join(self.items)}]"
 
