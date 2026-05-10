@@ -21,6 +21,6 @@ class Queue:
         self.items.remove(item)
         return item
 
-    def __rpr__(self):
+    def __repr__(self):
         return f"[{', '.join(self.items)}]"
 
