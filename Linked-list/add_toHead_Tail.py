@@ -3,22 +3,25 @@ from linked_lists import Node
 class LinkedList:
     # add a new node to the head
     def add_to_head(self, node):
-        node.next = self.head 
+        if not self.head:
+            self.tail = node
+
+        node.next = self.head
         self.head = node
 
     # add_to_tail adds a new node to the end of the list
     def add_to_tail(self, node):
         if not self.head:
-            self.head = node 
+            self.head = node            
+            self.tail = node
             return 
-        current = self.head
-        while current.next:
-            current = current.next
-        current.next = node
+        self.tail.next = node
+        self.tail = node
 
 
     def __init__(self):
         self.head = None
+        self.tail = None
 
 
     def __iter__(self):
