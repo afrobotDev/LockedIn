@@ -1,4 +1,4 @@
-from add_toHead_Tail import *
+from linked_list_order1_queue import *
 
 run_cases = [
     (["Major Marquis Warren", "John Ruth"], ["John Ruth", "Major Marquis Warren"]),
