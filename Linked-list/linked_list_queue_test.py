@@ -1,6 +1,6 @@
 import random
 import time
-from add_toHead_Tail import *
+from linked_list_order1_queue import *
 
 run_cases = [
     (10, "Patrick Bateman", "Paul Allen"),
