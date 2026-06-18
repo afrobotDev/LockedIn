@@ -1,7 +1,7 @@
 import random
 from redblack_trees import *
 from user import *
-from ref import *  # ref module is hidden because it has the solution!
+from ref import *  
 
 run_cases = [
     (4),
